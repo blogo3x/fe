@@ -53,8 +53,7 @@
 	}
 	.chat-item .counter .content{
 		position: relative;
-		width: 100%;
-		max-width:39px;
+		width: 35px;
 		text-align:center;
 		background-color: #a88d30;
 		border-radius:50%;
@@ -69,7 +68,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		padding-top:.75rem;
+		padding-top:.65rem;
 	}
 	
 
