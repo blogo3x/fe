@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link href="../nutalent/img/favicon.png" rel="apple-touch-icon">
+		
+		<link href="https://fonts.googleapis.com/css?family=Exo:300,400,500,700" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
+		<link href="../nutalent/lib/ionic/css/ionic.css" rel="stylesheet">
+		<link href="../nutalent/css/app.min.css?v=2.0.1541180238137" rel="stylesheet">
+		<link href="../nutalent/css/jr-crop.css" rel="stylesheet">
+		
+		<link href="recruiter.css?v=2.0.1541180238137" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="nav-bar-block">
+			<ion-header-bar class="bar-purple bar bar-header" align-title="center">
+				<div class="title title-center header-item" style="left: 51px; right: 51px;">Galeri Proyek</div>
+				<div class="buttons buttons-right header-item">
+					<span class="right-buttons">
+						<button class="button button-burger" menu-toggle="right">
+						<div class="bars-icon"><i class="fa fa-bars"></i></div>
+						</button>
+					</span>
+				</div>
+			</ion-header-bar>
+		</div>
+				
+		<ion-content class="scroll-content ionic-scroll overflow-scroll has-header has-tabs">
+			<div class="project-details row">
+				<div class="images col col-40 col-center">
+					<img src="../nutalent/img/example.jpg">
+				</div>
+				<div class="details col col-60 col-center">
+					<div class="title">Judul</div>
+					<div class="category">Kategori/Program</div>
+					<div class="views-count"><i class="icon ion-md-person"></i> <span class="views-number">667</span></div>
+					<div class="synopsis">Sinopsis Singkat Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet </div>
+					<div class="row buttons-group">
+						<div class="left-group col-center">
+							<button class="no-border left"><i class="far fa-thumbs-up"></i></button>
+							<button class="no-border left"><i class="far fa-comment-alt"></i></button>
+							<button class="no-border left"><i class="fas fa-share-alt"></i></button>
+						</div>
+						
+						<div class="right-group col-center">
+							<button class="proper button button-small btn-tertiary tt-u no-transition">Lihat</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="scroll">	
+				
+				<div class="video-list-skeleton" ng-repeat="val in [0,1,2,3,3]" ng-show="showSkeleton == true">
+					<div class="image"></div>
+					<div class="description">
+						<div class="avatar"></div>
+						<div class="title"></div>
+						<div class="caption"></div>
+						</div>
+						<div class="bottom-section">
+						<div class="views"></div>
+						<div class="icons">
+						  <!-- ngRepeat: val in [0,1,2,3] -->
+						  <div class="icon-item" ng-repeat="val in [0,1,2,3,3]"></div>
+						  <!-- end ngRepeat: val in [0,1,2,3] -->
+						  <div class="icon-item" ng-repeat="val in [0,1,2,3]"></div>
+						  <!-- end ngRepeat: val in [0,1,2,3] -->
+						  <div class="icon-item" ng-repeat="val in [0,1,2,3]"></div>
+						  <!-- end ngRepeat: val in [0,1,2,3] -->
+						  <div class="icon-item" ng-repeat="val in [0,1,2,3]"></div>
+						  <!-- end ngRepeat: val in [0,1,2,3] -->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</ion-content> 
+		
+		<ion-tabs class="tabs-icon-top tabs-bottom tabs-standard" ng-class="{'tabs-item-hide': hideTabs==true}">
+			<div class="tab-nav tabs">	
+				<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()" class="tab-item" icon="nu-home" style=""><!-- ngIf: badge --><!-- ngIf: getIcon() --><i class="icon nu-home" ng-if="getIcon()" style=""></i><!-- end ngIf: getIcon() --><span class="tab-title ng-binding" ng-bind-html="title">Beranda</span></a>
+				
+				<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()" class="tab-item" icon="nu-home" style=""><!-- ngIf: badge --><!-- ngIf: getIcon() --><i class="icon nu-gallery" ng-if="getIcon()" style=""></i><!-- end ngIf: getIcon() --><span class="tab-title ng-binding" ng-bind-html="title">Galeri</span></a>
+				
+				<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()" class="tab-item" icon="nu-home" style=""><!-- ngIf: badge --><!-- ngIf: getIcon() --><i class="icon nu-notif" ng-if="getIcon()" style=""></i><!-- end ngIf: getIcon() --><span class="tab-title ng-binding" ng-bind-html="title">Aktifitas</span></a>
+				
+				<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()" class="tab-item" icon="nu-home" style=""><!-- ngIf: badge --><!-- ngIf: getIcon() --><i class="icon nu-user" ng-if="getIcon()" style=""></i><!-- end ngIf: getIcon() --><span class="tab-title ng-binding" ng-bind-html="title">Profil</span></a>
+			</div>
+		</ion-tabs>
+	</body>
+</html>
