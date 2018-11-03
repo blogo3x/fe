@@ -1,0 +1,95 @@
+.chat-footer-box .comment-box {
+  margin:0 auto;
+  z-index: 99;
+  padding: 5px 10px;
+  }
+  .chat-footer-box .comment-box.search-on-content {
+    position: relative;
+    left: auto;
+    right: auto;
+    padding: 0 1.5rem; }
+    .chat-footer-box .comment-box.search-on-content .input-text {
+      height: 36px;
+      color: #373737;
+     }
+    .chat-footer-box .comment-box.search-on-content i {
+      left: 2.8rem;
+      top: 1rem;
+      color: rgba(55, 55, 55, 0.2); }
+  .chat-footer-box .comment-box i {
+    position: absolute;
+    font-size: 1.96rem;
+    color: #333;
+    top: 2.3rem; }
+  .chat-footer-box .comment-box .input-text {
+    width: 100%;
+    height: 22px;
+    background-color: transparent;
+  border: solid 1px rgba(55, 55, 55, 0.2); 
+  border-radius:20px;
+    color: #333;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem; }
+
+.chat-footer-box .icon-button{
+	font-size:2.5em;
+	text-align:center;
+}
+
+.user-details{
+	margin: 10px auto 10px auto;
+	padding: 15px 0;
+	border-bottom:1px solid #ccc;
+	}
+	.user-details .avatar{
+		width:100%;
+		text-align:center;
+	}
+	.user-details .avatar img{
+		width:80%;
+		max-width:60px;
+		margin:0 auto;
+		border-radius:50%;
+	}
+	.user-details .name{
+		font-size:1.5em;
+		font-weight:bolder;
+		width:100%;
+		text-align:center;
+	}
+
+.chat-container{
+	width:100%;
+	margin-top:10px;
+	clear:both;
+	}
+	.chat-container .chat-date{
+		width:100%;
+		text-align:center;
+		color:#9a9a9a;
+		font-size:12px;
+		margin-top:10px;
+		float:left;
+	}
+	.chat-container .chat-content{
+		margin-top:-5px;
+	}
+	.chat-container .chat-box{
+		max-width:65%;
+		text-align:left;
+		font-size:1.25em;
+		border-radius:5px;
+		padding:5px;
+		margin:5px 10px;
+	}
+	.chat-container .chat-left{
+		background-color:#fff;
+		border:1px solid #333;
+		float:left;
+		clear:both;
+	}
+	.chat-container .chat-right{
+		background-color:#e9e9e9;
+		border:1px solid #e9e9e9;
+		float:right;
+		clear:both;
+	}
