@@ -1,0 +1,75 @@
+.nav-bar-block
+    ion-header-bar.bar-purple.bar.bar-header(align-title='center')
+        .title.title-center.header-item(style='left: 51px; right: 51px;') Galeri Proyek
+        .buttons.buttons-right.header-item
+            span.right-buttons
+                button.button.button-burger(menu-toggle='right')
+                    .bars-icon
+                        i.fa.fa-bars
+ion-content.scroll-content.ionic-scroll.overflow-scroll.has-header.has-tabs
+    .project-details.row
+        .images.col.col-40.col-center
+            img(src='../nutalent/img/example.jpg')
+        .details.col.col-60.col-center
+            .title Judul
+            .category Kategori/Program
+            .views-count
+                i.icon.ion-md-person
+                span.views-number 667
+            .synopsis
+                | Sinopsis Singkat Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+            .row.buttons-group
+                .left-group.col-center
+                    button.no-border.left
+                        i.far.fa-thumbs-up
+                    button.no-border.left
+                        i.far.fa-comment-alt
+                    button.no-border.left
+                        i.fas.fa-share-alt
+                .right-group.col-center
+                    button.proper.button.button-small.btn-tertiary.tt-u.no-transition Lihat
+    .scroll
+        .video-list-skeleton(ng-repeat='val in [0,1,2,3,3]', ng-show='showSkeleton == true')
+            .image
+            .description
+                .avatar
+                .title
+                .caption
+            .bottom-section
+                .views
+                .icons
+                    // ngRepeat: val in [0,1,2,3]
+                    .icon-item(ng-repeat='val in [0,1,2,3,3]')
+                    // end ngRepeat: val in [0,1,2,3]
+                    .icon-item(ng-repeat='val in [0,1,2,3]')
+                    // end ngRepeat: val in [0,1,2,3]
+                    .icon-item(ng-repeat='val in [0,1,2,3]')
+                    // end ngRepeat: val in [0,1,2,3]
+                    .icon-item(ng-repeat='val in [0,1,2,3]')
+                    // end ngRepeat: val in [0,1,2,3]
+ion-tabs.tabs-icon-top.tabs-bottom.tabs-standard(ng-class="{'tabs-item-hide': hideTabs==true}")
+    .tab-nav.tabs
+        a.tab-item(ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}", ng-disabled='disabled()', icon='nu-home', style='')
+            // ngIf: badge
+            // ngIf: getIcon()
+            i.icon.nu-home(ng-if='getIcon()', style='')
+            // end ngIf: getIcon()
+            span.tab-title.ng-binding(ng-bind-html='title') Beranda
+        a.tab-item(ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}", ng-disabled='disabled()', icon='nu-home', style='')
+            // ngIf: badge
+            // ngIf: getIcon()
+            i.icon.nu-gallery(ng-if='getIcon()', style='')
+            // end ngIf: getIcon()
+            span.tab-title.ng-binding(ng-bind-html='title') Galeri
+        a.tab-item(ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}", ng-disabled='disabled()', icon='nu-home', style='')
+            // ngIf: badge
+            // ngIf: getIcon()
+            i.icon.nu-notif(ng-if='getIcon()', style='')
+            // end ngIf: getIcon()
+            span.tab-title.ng-binding(ng-bind-html='title') Aktifitas
+        a.tab-item(ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}", ng-disabled='disabled()', icon='nu-home', style='')
+            // ngIf: badge
+            // ngIf: getIcon()
+            i.icon.nu-user(ng-if='getIcon()', style='')
+            // end ngIf: getIcon()
+            span.tab-title.ng-binding(ng-bind-html='title') Profil
